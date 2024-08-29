@@ -1,0 +1,23 @@
+document.getElementById('marksForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const studentName = document.getElementById('studentName').value;
+    const studentMarks = document.getElementById('studentMarks').value;
+
+    if (studentName && studentMarks) {
+        const table = document.getElementById('marksTable').querySelector('tbody');
+        const row = document.createElement('tr');
+
+        const nameCell = document.createElement('td');
+        nameCell.textContent = studentName;
+
+        const marksCell = document.createElement('td');
+        marksCell.textContent = studentMarks;
+
+        row.appendChild(nameCell);
+        row.appendChild(marksCell);
+        table.appendChild(row);
+
+        document.getElementById('marksForm').reset();
+    }
+});
