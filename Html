@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students' Marks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Students' Marks</h1>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Enter Student Marks</h2>
+            <form id="marksForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" required>
+                
+                <label for="studentMarks">Marks:</label>
+                <input type="number" id="studentMarks" required>
+                
+                <button type="submit">Add Marks</button>
+            </form>
+        </section>
+        
+        <section class="marks-section">
+            <h2>Students' Marks List</h2>
+            <table id="marksTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student marks will be appended here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Students' Marks Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
